@@ -92,6 +92,7 @@
 </template>
 
 <script>
+  debugger
   export default {
     name: 'HelloWorld',
 
