@@ -113,7 +113,7 @@
       ],
       importantLinks: [
         {
-          text: 'Documentation',
+          text: 'Pratinha Docs',
           href: 'https://vuetifyjs.com',
         },
         {
