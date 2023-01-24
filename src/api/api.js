@@ -1,5 +1,7 @@
 export const api = {
-  searchUser(searchString) {
-    return fetch(`https://api.github.com/search/users?q=${searchString}`).then(r => r.json())
+  async searchUser(searchString) {
+    const result = await fetch(`https://api.github.com/search/users?q=${searchString}`)
+    const result_json = await result.json()
+    return result_json
   }
 }

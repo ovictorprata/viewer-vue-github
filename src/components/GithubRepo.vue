@@ -29,13 +29,11 @@
       loading: false,
     }),
     methods: {
-      lookingForGithubUser: debouncerDecorator(function () {
+      lookingForGithubUser: debouncerDecorator(async function () {
         this.loading = true
-        api.searchUser(this.userSearch).then(data => {
-          this.userList = data.items
-          console.log(data.items)
-          this.loading = false
-        })
+        const data = await api.searchUser(this.userSearch)
+        this.userList = data.items
+        this.loading = false
         }, 500)
     },
     watch: {
