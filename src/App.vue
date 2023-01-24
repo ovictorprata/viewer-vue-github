@@ -38,19 +38,19 @@
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <github-viewer></github-viewer>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import GithubViewer from './components/GithubViewer';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    GithubViewer,
   },
 
   data: () => ({
